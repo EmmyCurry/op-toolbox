@@ -11,16 +11,41 @@
 <body>
     <div class="grid-container">
         <div class="header">
-            
+            <img id="logo" src="https://via.placeholder.com/600x100.jpg">
         </div>
-        <div class="nav">
 
+        <div class="nav">
+            <ul>
+                <li><a href="default.asp">Home</a></li>
+                <li><a href="notes-template.html">Notes Templates</a></li>
+                <li><a href="l-code-finder.html">L Codes Finder</a></li>
+              </ul>
         </div>
         <div class="questions">
-            
+            <form>
+                <label for="deviceType">What type of device is the patient being seen for?</label>
+                <select id="deviceType" name="deviceType">
+                    <option value="AFO">AFO</option>
+                    <option value="BK">BK</option>
+                    <option value="AK">AK</option>
+                </select>
+
+                <br>
+
+            <div id="q1">
+                <label for="othersPresent">Were others present at the appointment?</label>
+                <select id="othersPresent" name="othersPresent">
+                    <option value="no" selected>No</option>
+                    <option value="yes">Yes</option>
+                </select>
+            </div>
+            </form>
+
         </div>
         <div class="notes">
-            <p>&lt;&lt;first/last name&gt;&gt; was seen at &lt;&lt;visit location&gt;&gt; with [additional persons present] on <<visit date>> for <<visit type>> of a(n) [device]. The [device] was prescribed by <<referring phys>>.</p>
+            <section id="basic-info">
+                <p id="sentence-one">&lt;&lt;first/last name&gt;&gt; was seen at &lt;&lt;visit location&gt;&gt; on &lt;&lt;visit date&gt;&gt; for &lt;&lt;visit type&gt;&gt; of [device].</p>
+            </section>
         </div>
       </div>
 </body>

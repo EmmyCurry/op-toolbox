@@ -11,9 +11,21 @@
   
   .header { grid-area: header; }
   
-  .nav { grid-area: nav; }
+  .nav { 
+    grid-area: nav;
+    display: flex;
+
+    
+    
+    
+    }
   
-  .questions { grid-area: questions; }
+  .questions {
+    grid-area: questions; 
+    border-right: 1px;
+
+
+}
   
   .notes { grid-area: notes; }
   
