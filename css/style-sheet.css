@@ -14,9 +14,6 @@
   .nav { 
     grid-area: nav;
     display: flex;
-
-    
-    
     
     }
   
@@ -24,8 +21,11 @@
     grid-area: questions; 
     border-right: 1px;
 
-
 }
   
-  .notes { grid-area: notes; }
+  .notes { grid-area: 
+    notes; }
   
+  .hidden {
+    visibility: hidden;
+  }

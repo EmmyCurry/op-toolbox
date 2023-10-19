@@ -23,26 +23,36 @@
         </div>
         <div class="questions">
             <form>
-                <label for="deviceType">What type of device is the patient being seen for?</label>
-                <select id="deviceType" name="deviceType">
-                    <option value="AFO">AFO</option>
-                    <option value="BK">BK</option>
-                    <option value="AK">AK</option>
-                </select>
 
-                <br>
+            <section class='basic-info'>
+                <div id="q1">
+                    <label for="othersPresent">Were others present at the appointment?</label>
+                    <input type="checkbox" id="othersPresent" name="othersPresent">
+                    
+                </div>
 
-            <div id="q1">
-                <label for="othersPresent">Were others present at the appointment?</label>
-                <input type="checkbox" id="othersPresent" name="othersPresent">
-           
-            </div>
+                <div id="q1a" class=hidden>
+                    <label for="whoAttended">Who else was in attendance?</label>
+                    <input type="textArea" id="inAttendance" name="additionalPeople">
+                </div>
+
+                <div id="q2">
+                    <label for="multipleDiagnoses">How many diagnoses does patient have?</label>
+                    <select id="diagnoses">
+                        <option value='1'>1</option>
+                        <option value='2'>2</option>
+                        <option value='3'>3</option>
+            
+                </div>
+
+              </section>
             </form>
 
         </div>
+        
         <div class="notes">
             <section id="basic-info">
-                <p id="sentence-one">&lt;&lt;first/last name&gt;&gt; was seen at &lt;&lt;visit location&gt;&gt; on &lt;&lt;visit date&gt;&gt; for &lt;&lt;visit type&gt;&gt; of [device].</p>
+                <p id="sentence-one">&lt;&lt;first/last name&gt;&gt; was seen at &lt;&lt;visit location&gt;&gt; on &lt;&lt;visit date&gt;&gt; for &lt;&lt;visit type&gt;&gt; of an AFO.</p>
             </section>
         </div>
       </div>
