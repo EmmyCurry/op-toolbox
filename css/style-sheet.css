@@ -1,30 +1,54 @@
-.grid-container {  display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.4fr 0.2fr 2.4fr;
+.grid-container {  
+    display: grid;
+    grid-template-columns: .75fr 1fr 1fr;
+    grid-template-rows: .3fr 2fr 1fr
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
-      "header header"
-      "nav nav"
-      "questions notes";
+      "header header header"
+      "nav questions notes"
+      "nav questions lCodes";
   }
   
-  .header { grid-area: header; }
+  .header { 
+    grid-area: header; 
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .header > h1 {
+    flex-grow: .5;
+    justify-content: space-evenly;
+
+  }
   
   .nav { 
     grid-area: nav;
     display: flex;
+    list-style-type: none;
+    border: purple dotted 1px;
     
     }
   
   .questions {
     grid-area: questions; 
-    border-right: 1px;
-
-}
+    border: black solid 2px;
+    width: 40vw;
+    height: 100vh;
+  }
   
-  .notes { grid-area: 
-    notes; }
+  .notes { 
+    grid-area: notes; 
+    border: blue solid 2px;
+  
+    display: flex; /*Will this make the size of the box grow to fit all the text? */
+   
+  }
+
+  .lcode {
+    grid-area: lCodes;
+    border: green solid 2px;
+  }
   
   .hidden {
     visibility: hidden;

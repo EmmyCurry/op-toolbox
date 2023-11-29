@@ -7,17 +7,39 @@
     <title>OP Toolbox</title>
     <link rel="stylesheet" href="css/style-sheet.css">
     <script src="js/script.js"></script>
+    <!-- Import Vue.js -->
+    <script src="https://unpkg.com/vue@3.0.0-beta.12/dist/vue.global.js"></script>
 </head>
 <body>
     <div class="grid-container">
         <div class="header">
-            <img id="logo" src="https://via.placeholder.com/600x100.jpg">
+            <img id="logo" src="https://via.placeholder.com/200x150.jpg">
+            <h1>OP Toolbox</h1>
         </div>
 
         <div class="nav">
-            <ul>
-                <li><a href="default.asp">Home</a></li>
-                <li><a href="notes-template.html">Notes Templates</a></li>
-                <li><a href="l-code-finder.html">L Codes Finder</a></li>
-              </ul>
+            <p>L Codes Flowchart questions placeholder</p>
         </div>
+
+        <div class="questions" id="questions">
+            <p>{{ questionList }}</p>
+        </div>
+
+        <div class="notes">
+            <p>Notes Output placeholder</p>
+        </div>
+
+        <div class="lcode">
+            <p>L Codes Output placeholder</p>
+        </div>
+
+        <!-- Import App -->
+    <script src = "./js/script.js"></script>
+
+    <!-- Mount app -->
+    <script>
+        const mountedApp = questionList.mount('#questions')
+    </script>
+
+</body>
+</html>
